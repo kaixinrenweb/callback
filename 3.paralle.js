@@ -12,7 +12,7 @@ function after(times, callback){
         }
     }
 }
-let newFn = after(2, (results)=>{
+let newFn = after(2, (results)=>{ //这个方法会在所有异步执行之后执行
     console.log(results);
 });
 
