@@ -7,10 +7,10 @@ let path = require("path");
 function EventEmitter(){
     this._arr = [];
 }
-EventEmitter.prototype.on = function(callback){
+EventEmitter.prototype.on = function(callback){ //订阅
     this._arr.push(callback);
 }
-EventEmitter.prototype.emit = function(){
+EventEmitter.prototype.emit = function(){  //发布 发布时需要让on的方法依次的执行
     this._arr.forEach(fn=>fn.apply(this, arguments));
 }
 
