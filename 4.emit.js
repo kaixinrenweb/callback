@@ -1,7 +1,7 @@
 let fs   = require("fs");
 let path = require("path");
 
-// 发布订阅
+// 发布订阅 设计模式
 // 订阅 [fn, fn]
 // 发布 [].forEach
 function EventEmitter(){
